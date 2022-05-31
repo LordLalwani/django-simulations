@@ -1,1 +1,1 @@
-# django-simulations
+# django-simulations-app
