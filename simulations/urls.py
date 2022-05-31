@@ -19,5 +19,6 @@ from simulations import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('simulations/', views.simulation_list)
+    path('simulations/', views.simulation_list),
+    path('simulations/<int:id>', views.simulation_detail)
 ]
