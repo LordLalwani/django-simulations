@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from simulations import views
+from rest_framework.urlpatterns import format_suffix_patterns;
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('simulations/', views.simulation_list),
     path('simulations/<int:id>', views.simulation_detail)
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
